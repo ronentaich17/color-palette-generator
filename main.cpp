@@ -1,4 +1,8 @@
 #include "selection.h"
+/*
+this is the main file for the color palette generator. for now, it is command line based,
+but future updates will add a GUI for a more comfortable user interface
+*/
 
 //using namespace std;
 int main(){
