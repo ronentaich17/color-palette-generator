@@ -16,6 +16,7 @@ int main(){
     std::cout << "2: Analogous\n";
     std::cout << "3: Triadic\n";
     std::cout << "4: Monochromatic\n";
+    std::cout << "5: Tetradic\n";
     std::cout << "--------------------------------------------------------------------------------------\n";
     
     
@@ -46,6 +47,10 @@ int main(){
                     
             case 4:
                 selectMonochromatic();
+                break;
+            
+            case 5:
+                selectTetradic();
                 break;
             
             default:

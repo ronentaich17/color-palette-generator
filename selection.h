@@ -91,3 +91,20 @@ void selectMonochromatic(){
     delete[] monochromaticHues;
 }
 
+void selectTetradic(){
+    int baseHue;
+
+    std::cout << "Enter the base color hue (0-359): ";
+    std::cin >> baseHue;
+
+    std::vector<int> tetradicColorVect = tetradicColors(baseHue);
+
+    int counter = 1;
+
+    for(int i: tetradicColorVect){
+        std::cout << "Hue #" << counter <<": ";
+        std::cout << i << std::endl;
+        counter++;
+    }
+
+}

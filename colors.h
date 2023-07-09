@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <vector>
 
 /*======================================================================================
 This header file contains the algorithms that produce the colors in the palette based on
@@ -70,4 +71,26 @@ void monochromaticColors(int baseHue, int numColors, float minSaturation, float 
 
         hue = fmod((hue + 30), 360);
     }
+}
+
+/*function to calculate tetradic colors
+----------------------------------------------
+tetradic color schemes are sets of 4 colors, each spaced evenly across the 
+color wheel at 60 degrees. using the base hue given by the user, the algorithm 
+generates the rest of the hues in the color scheme by calculating the next hue and
+adding it to the vector, which will return the final hues in the color palette
+----------------------------------------------*/
+
+std::vector<int> tetradicColors(int baseHue){
+    std::vector<int> tetradicColors;
+    int spacing = 60; //tetradic colors are spaced 60 degrees apart
+
+    tetradicColors.push_back(baseHue); //first color will be the base hue
+
+    for (int i = 1; i < 4; i++){
+        int currHue = (baseHue + (i * spacing)) % 360; 
+        tetradicColors.push_back(currHue);
+    }
+
+    return tetradicColors;
 }
