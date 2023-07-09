@@ -81,6 +81,7 @@ generates the rest of the hues in the color scheme by calculating the next hue a
 adding it to the vector, which will return the final hues in the color palette
 ----------------------------------------------*/
 
+//thinking of changes all the algorithms to return a data structure instead of being void
 std::vector<int> tetradicColors(int baseHue){
     std::vector<int> tetradicColors;
     int spacing = 60; //tetradic colors are spaced 60 degrees apart
