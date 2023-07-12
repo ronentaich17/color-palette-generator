@@ -8,6 +8,9 @@ using namespace std;
 This header file contains the algorithms that produce the colors in the palette based on
 the scheme that the user selects on the menu shown in main.cpp. For now, they are calculated
 off of the base hue, provided by the user
+
+These algorithms are not currently complete and are a simplified version of what I am
+thinking for the final product 
 ======================================================================================*/
 
 /*function to calculate the complementary color
