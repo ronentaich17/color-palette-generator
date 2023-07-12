@@ -11,36 +11,36 @@ information
 
 void selectComplementary(){
     int baseHue;
-    std::cout << "Enter the base color hue (0-359): ";
-    std::cin >> baseHue;
+    cout << "Enter the base color hue (0-359): ";
+    cin >> baseHue;
 
     int complementaryHue;
     complementaryColor(baseHue, complementaryHue);
 
-    std::cout << "Base Color: Hue " << baseHue << std::endl;
-    std::cout << "Complementary Color: Hue " << complementaryHue << std::endl;
+    cout << "Base Color: Hue " << baseHue << endl;
+    cout << "Complementary Color: Hue " << complementaryHue << endl;
 }
 
 void selectAnalogous(){
     int baseHue;
-    std::cout << "Enter the base color hue (0-359): ";
-    std::cin >> baseHue;
+    cout << "Enter the base color hue (0-359): ";
+    cin >> baseHue;
 
     int numOfColors;
-    std::cout << "Enter the number of analogous colors to generate: ";
-    std::cin >> numOfColors;
+    cout << "Enter the number of analogous colors to generate: ";
+    cin >> numOfColors;
 
     int angle;
-    std::cout << "Enter the angle between the analogous colors: ";
-    std::cin >> angle;
+    cout << "Enter the angle between the analogous colors: ";
+    cin >> angle;
 
     int* analogousHues = new int[numOfColors];
     analogousColors(baseHue, numOfColors, angle, analogousHues);
 
-    std::cout << "Base Color: Hue " << baseHue << std::endl;
-    std::cout << "Analogous Colors:" << std::endl;
+    cout << "Base Color: Hue " << baseHue << endl;
+    cout << "Analogous Colors:" << endl;
     for (int i = 0; i < numOfColors; ++i) {
-        std::cout << "Color " << i + 1 << ": Hue " << analogousHues[i] << std::endl;
+        cout << "Color " << i + 1 << ": Hue " << analogousHues[i] << endl;
     }
 
     delete[] analogousHues;
@@ -49,43 +49,43 @@ void selectAnalogous(){
 
 void selectTriadic(){
     int baseHue;
-    std::cout << "Enter the base color hue (0-359): ";
-    std::cin >> baseHue;
+    cout << "Enter the base color hue (0-359): ";
+    cin >> baseHue;
 
     int triadicHues[3];
     triadicColors(baseHue, triadicHues);
 
-    std::cout << "Base Color: Hue " << baseHue << std::endl;
-    std::cout << "Triadic Colors:" << std::endl;
+    cout << "Base Color: Hue " << baseHue << endl;
+    cout << "Triadic Colors:" << endl;
     for (int i = 0; i < 3; ++i) {
-        std::cout << "Color " << i + 1 << ": Hue " << triadicHues[i] << std::endl;
+        cout << "Color " << i + 1 << ": Hue " << triadicHues[i] << endl;
     }
 }
 
 void selectMonochromatic(){
     int baseHue;
-    std::cout << "Enter the base color hue (0-359): ";
-    std::cin >> baseHue;
+    cout << "Enter the base color hue (0-359): ";
+    cin >> baseHue;
 
     int numOfColors;
-    std::cout << "Enter the number of monochromatic colors to generate: ";
-    std::cin >> numOfColors;
+    cout << "Enter the number of monochromatic colors to generate: ";
+    cin >> numOfColors;
 
     float minSaturation, maxSaturation;
-    std::cout << "Enter the minimum and maximum saturation (0-100): ";
-    std::cin >> minSaturation >> maxSaturation;
+    cout << "Enter the minimum and maximum saturation (0-100): ";
+    cin >> minSaturation >> maxSaturation;
 
     float minLightness, maxLightness;
-    std::cout << "Enter the minimum and maximum lightness (0-100): ";
-    std::cin >> minLightness >> maxLightness;
+    cout << "Enter the minimum and maximum lightness (0-100): ";
+    cin >> minLightness >> maxLightness;
 
     int* monochromaticHues = new int[numOfColors];
     monochromaticColors(baseHue, numOfColors, minSaturation, maxSaturation, minLightness, maxLightness, monochromaticHues);
 
-    std::cout << "Base Color: Hue " << baseHue << std::endl;
-    std::cout << "Monochromatic Colors:" << std::endl;
+    cout << "Base Color: Hue " << baseHue << endl;
+    cout << "Monochromatic Colors:" << endl;
     for (int i = 0; i < numOfColors; ++i) {
-        std::cout << "Color " << i + 1 << ": Hue " << monochromaticHues[i] << std::endl;
+        cout << "Color " << i + 1 << ": Hue " << monochromaticHues[i] << endl;
     }
 
     delete[] monochromaticHues;
@@ -94,16 +94,16 @@ void selectMonochromatic(){
 void selectTetradic(){
     int baseHue;
 
-    std::cout << "Enter the base color hue (0-359): ";
-    std::cin >> baseHue;
+    cout << "Enter the base color hue (0-359): ";
+    cin >> baseHue;
 
-    std::vector<int> tetradicColorVect = tetradicColors(baseHue);
+    vector<int> tetradicColorVect = tetradicColors(baseHue);
 
     int counter = 1;
 
     for(int i: tetradicColorVect){
-        std::cout << "Hue #" << counter <<": ";
-        std::cout << i << std::endl;
+        cout << "Hue #" << counter <<": ";
+        cout << i << endl;
         counter++;
     }
 

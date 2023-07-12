@@ -2,6 +2,8 @@
 #include <cmath>
 #include <vector>
 
+using namespace std;
+
 /*======================================================================================
 This header file contains the algorithms that produce the colors in the palette based on
 the scheme that the user selects on the menu shown in main.cpp. For now, they are calculated
@@ -82,8 +84,8 @@ adding it to the vector, which will return the final hues in the color palette
 ----------------------------------------------*/
 
 //thinking of changes all the algorithms to return a data structure instead of being void
-std::vector<int> tetradicColors(int baseHue){
-    std::vector<int> tetradicColors;
+vector<int> tetradicColors(int baseHue){
+    vector<int> tetradicColors;
     int spacing = 60; //tetradic colors are spaced 60 degrees apart
 
     tetradicColors.push_back(baseHue); //first color will be the base hue

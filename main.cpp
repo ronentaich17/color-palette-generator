@@ -9,22 +9,22 @@ int main(){
 
     int choice;
 
-    std::cout << "Welcome to the Color Palette Generator! Please select the color scheme you would like:\n";
-    std::cout << "--------------------------------------------------------------------------------------\n";
-    std::cout << "0: Quit\n";
-    std::cout << "1: Complementary\n";
-    std::cout << "2: Analogous\n";
-    std::cout << "3: Triadic\n";
-    std::cout << "4: Monochromatic\n";
-    std::cout << "5: Tetradic\n";
-    std::cout << "--------------------------------------------------------------------------------------\n";
+    cout << "Welcome to the Color Palette Generator! Please select the color scheme you would like:\n";
+    cout << "--------------------------------------------------------------------------------------\n";
+    cout << "0: Quit\n";
+    cout << "1: Complementary\n";
+    cout << "2: Analogous\n";
+    cout << "3: Triadic\n";
+    cout << "4: Monochromatic\n";
+    cout << "5: Tetradic\n";
+    cout << "--------------------------------------------------------------------------------------\n";
     
     
 
 
     while(choice != 0){
-        std::cout << "Enter: ";
-        std::cin >> choice;
+        cout << "Enter: ";
+        cin >> choice;
 
         if(choice == 0){
             std::cout << "Thank you for using the color palette generator!\n";
@@ -54,7 +54,7 @@ int main(){
                 break;
             
             default:
-                std::cout << "Invalid choice\n";
+                cout << "Invalid choice\n";
         
         }
     }
