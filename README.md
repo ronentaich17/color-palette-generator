@@ -10,22 +10,22 @@ Here are the color schemes that the algorithms are based on:
 
 ### Complementary
 
-This color scheme draws from two colors on opposite ends of the color wheel. Usually, this results in two colors that compliment each other well
+Complementary color schemes draw from two colors on opposite ends of the color wheel. Usually, this results in two colors that compliment each other well
 contrast-wise. An example of this would be orange and blue.
 
 ### Analogous
 
-This color scheme is comprsied of groups of colors that are next to each other on the color wheel. Usually, it is made up of three colors but doesn't
+Analogous colors are comprsied of groups of colors that are next to each other on the color wheel. Usually, it is made up of three colors but doesn't
 necessarily limited to that. Sometimes, it can go up to four or five colors. An example of this would be green-yellow-orange.
 
 ### Triadic
 
-In a Triadic color scheme, three colors are returned such that they are all equidistant from one another on the color wheel. An example of such a color
+Triadic colors are made up of three colors such that they are all equidistant from one another on the color wheel. An example of such a color
 scheme would be red-yellow-blue.
 
 ### Monochromatic
 
-Monochromatic color schemes are made up of a singular color. It only uses variations of that colors hue, which is made by altering the brightness and
+Monochromatic colors are made up of a singular color. It only uses variations of that colors hue, which is made by altering the brightness and
 satruation of that color. An example of something that uses a monochromatic color scheme would be the grayscale.
 
 ### Tetradic
@@ -33,5 +33,5 @@ satruation of that color. An example of something that uses a monochromatic colo
 Tetradic colors are two sets of complimentary colors that are found on opposite ends of the color wheel. Using such a technique tends to provide a good
 balance between warm and cool colors. An example of this would be blue-orange and green-red
 
-While I do want color schemes will be added in the future, my main goal for this project is adding a user interface and improving the algorithms for the color
+While I do want to add more color schemes, my main goal for this project right now is adding a user interface and improving the algorithms for the color
 schemes mentioned above. Thanks for reading!
