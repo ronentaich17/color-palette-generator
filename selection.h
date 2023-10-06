@@ -6,7 +6,7 @@ color scheme functions based on what the user selects on the menu outlined in ma
 
 For example, if the user selects that they want a complementary color as a part of their 
 palette, then the selectComplentary function will execute and ask the user for the needed 
-information 
+information! 
 ======================================================================================*/
 
 void selectComplementary(){
