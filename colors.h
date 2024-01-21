@@ -5,21 +5,14 @@
 using namespace std;
 
 /*======================================================================================
-This header file contains the algorithms that produce the colors in the palette based on
-the scheme that the user selects on the menu shown in main.cpp. For now, they are calculated
-off of the base hue, provided by the user
-
-These algorithms are not currently complete and are a simplified version of what I am
-thinking for the final product 
+algorithms that produce the colors in the palette based on the scheme that the user selects
+on the menu. in-depth descriptions of how each scheme work is available in README.md 
 ======================================================================================*/
 
 /*function to calculate the complementary color
 -----------------------------------------------
-the complementary color is the color that opposite to the base 
-color on the color wheel. in terms of hue, the complementary 
-color is found by adding 180 degrees to the base hue. modding by 
-360 degrees ensures that the resulting hue value will be within
-the range of 0-359 degrees
+modding by 360 degrees ensures that the resulting 
+hue value will be within 0-359 degrees
 -----------------------------------------------*/
 
 void complementaryColor(int baseHue, int& complementaryHue){
@@ -28,10 +21,9 @@ void complementaryColor(int baseHue, int& complementaryHue){
 
 /*function to calculate analogous color
 ----------------------------------------------
-the analogous color scheme generates a set of colors that are adjacent
-to each other on the color wheel. first, the number of analogous colors and
-the hue range is generated. then offset detmermines the difference in hue between
-each of the analogous colors
+first, the number of analogous colors and the hue 
+range is generated. then, offset detmermines the 
+difference in hue betweeneach of the analogous colors
 ----------------------------------------------*/
 void analogousColors(int baseHue, int numColors, int angle, int* analogousHues){
     int halfRange = angle/2;
@@ -44,10 +36,7 @@ void analogousColors(int baseHue, int numColors, int angle, int* analogousHues){
 
 /*function to calculate triadic colors
 ----------------------------------------------
-traidic colors are colors that are evenly spaced on the color wheel.
-typically, they are 120 degrees apart, hence why the values 120 and 240
-are used to calculate the two values in the triadicHues array (the first
-color is the base hue given by the user)
+detailed descrpition in README.md
 ----------------------------------------------*/
 void triadicColors(int baseHue, int* triadicHues){
     triadicHues[0] = baseHue;
@@ -80,13 +69,12 @@ void monochromaticColors(int baseHue, int numColors, float minSaturation, float 
 
 /*function to calculate tetradic colors
 ----------------------------------------------
-tetradic color schemes are sets of 4 colors, each spaced evenly across the 
-color wheel at 60 degrees. using the base hue given by the user, the algorithm 
-generates the rest of the hues in the color scheme by calculating the next hue and
-adding it to the vector, which will return the final hues in the color palette
+Using the base hue given by the user, the algorithm 
+generates the rest of the hues in the color scheme 
+by calculating the next hue and adding it to the vector, 
+which will return the final hues in the color palette
 ----------------------------------------------*/
 
-//thinking of changes all the algorithms to return a data structure instead of being void
 vector<int> tetradicColors(int baseHue){
     vector<int> tetradicColors;
     int spacing = 60; //tetradic colors are spaced 60 degrees apart

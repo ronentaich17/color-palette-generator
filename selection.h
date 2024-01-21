@@ -1,12 +1,9 @@
 #include "colors.h"
 
 /*======================================================================================
-This header file contains the functions that activate the dialougue and call the proper 
-color scheme functions based on what the user selects on the menu outlined in main.cpp!
-
-For example, if the user selects that they want a complementary color as a part of their 
-palette, then the selectComplentary function will execute and ask the user for the needed 
-information! Updates will include more color palette options. 
+Contains the functions that activate the dialougue and call the proper color scheme functions 
+based on what the user selects on the menu. Initially was in main.cpp but decided to give
+it its own header 
 ======================================================================================*/
 
 void selectComplementary(){

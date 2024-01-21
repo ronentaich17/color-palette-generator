@@ -1,10 +1,8 @@
 #include "selection.h"
 /*========================================================================================
-this is the main file for the color palette generator. for now, it is command line based,
-but future updates will add a GUI for a more comfortable user interface
+main menu
 =========================================================================================*/
 
-//using namespace std;
 int main(){
 
     int choice;
@@ -20,14 +18,12 @@ int main(){
     cout << "--------------------------------------------------------------------------------------\n";
     
     
-
-
     while(choice != 0){
-        cout << "Enter: ";
+        cout << "Enter Option: ";
         cin >> choice;
 
         if(choice == 0){
-            std::cout << "Thank you for using the color palette generator!\n";
+            cout << "Thank you for using the color palette generator!\n";
             break;
         }
 
