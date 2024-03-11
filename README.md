@@ -6,7 +6,7 @@ This collection of C++ algorithms generates hue-based color palettes based on va
 
 ## Project Layout
 
-`main.cpp` contains the menu that activates when users start the application.
+`main.cpp` contains the menu that activates when the application is first launched
 
 `selection.h` contains the actions that are performed depending on what the user selects on the menu (such as entering base hue and the amount of colors in output palette)
 
